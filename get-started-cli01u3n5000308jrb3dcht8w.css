@@ -171,8 +171,6 @@ div form .actions input[type='submit'].primary.hs-button:focus {
   color: var(--input-color) !important;
 }
 [class^=form-columns-]:nth-child(3),
-[class^=form-columns-]:nth-child(4),
-[class^=form-columns-]:nth-child(5),
 [class^=form-columns-]:nth-child(6) {
   border-bottom: 1px;
   border-color: rgba(255, 255, 255, .25);
