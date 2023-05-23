@@ -100,7 +100,7 @@ ul[role='checkbox'] input:checked~span {
   color: var(--checkbox-checked-label-color);
 }
 
-.gray-text {
+span > span.gray-text {
   color: #777777;
 }
 div form .actions input[type='submit'].primary.hs-button,
