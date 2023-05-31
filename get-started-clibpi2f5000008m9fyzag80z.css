@@ -21,6 +21,9 @@
 * {
   font-family: var(--font-family) !important;
 }
+iframe#hs-form-iframe-0 {
+  height: auto !important;
+}
 .input {
   margin-right: 0px !important;
 }
