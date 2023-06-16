@@ -1,0 +1,195 @@
+
+@font-face {
+  font-family: 'Acidgrotesk';
+  src: url('https://assets.website-files.com/62fd1176aa13766f118be3b8/636cd2e804bf2995c8d571db_FFF-AcidGrotesk-Normal.woff2') format('woff2'), url('https://assets.website-files.com/62fd1176aa13766f118be3b8/636cd2e8a1159522f0615031_FFF-AcidGrotesk-Normal.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --input-background: #E2E2E2;
+  --label-color: #000000;
+  --placeholder-color: #777777;
+  --input-color: #000000;
+  --checkbox-border: #303030;
+  --checkbox-border-checked: #FFF;
+  --checkbox-checked-label-color: #000000;
+  --plus-background: #000000;
+  --plus-color: #fff;
+  --font-family: "Acidgrotesk";
+}
+* {
+  font-family: var(--font-family) !important;
+}
+iframe#hs-form-iframe-0 {
+  height: auto !important;
+}
+.input {
+  margin-right: 0px !important;
+}
+.input input,
+.input select,
+.input textarea {
+  background: var(--input-background) !important;
+  color: var(--input-color) !important;
+  border: none;
+  border-radius: 8px !important;
+  font-size: 15;
+}
+.input select:focus {
+  color: var(--input-color) !important;
+}
+.input select:has(option:checked) {
+  color: var(--input-color) !important;
+}
+.input select:has(option:disabled:checked) {
+  color: #777 !important;
+}
+.input option {
+  color: var(--input-color) !important;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 4px;
+}
+.input textarea {
+  min-height: 200px;
+  max-height: 350px;
+  resize: none;
+}
+.input select::placeholder,
+label span:first-child,
+.submitted-message {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-size: 14px;
+}
+.submitted-message,
+label span:first-child {
+  color: var(--label-color) !important;
+}
+.input select::placeholder {
+  color: var(--placeholder-color);
+}
+ul[role='checkbox'] {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+ul[role='checkbox'] li {
+  display: flex;
+  width: auto;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--checkbox-border);
+}
+ul[role='checkbox'] label {
+  padding: 12px;
+  margin-bottom: 0;
+}
+ul[role='checkbox'] label * {
+  font-size: 18px !important;
+}
+ul[role='checkbox'] li:has(input:checked) {
+  background: var(--checkbox-border-checked);
+}
+ul[role='checkbox'] input {
+  display: none;
+}
+ul[role='checkbox'] input~span {
+  color: var(--label-color);
+}
+ul[role='checkbox'] input:checked~span {
+  color: var(--checkbox-checked-label-color);
+}
+
+span > span.gray-text {
+  color: #777777 !important;
+}
+div form .actions input[type='submit'].primary.hs-button,
+div form .actions input[type='submit'].primary.hs-button:hover,
+div form .actions input[type='submit'].primary.hs-button:active,
+div form .actions input[type='submit'].primary.hs-button:focus {
+  width: 100%;
+  padding: 12px 24px;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-size: 18px;
+  border-radius: 40px;
+  border: none;
+  transition: none;
+  background: #0000FF;
+}
+.hs-attachments {
+  position: relative;
+  display: flex;
+}
+.hs-attachments label {
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+}
+.hs-attachments label span {
+  margin-bottom: 8px;
+}
+.hs-attachments input {
+  display: none;
+}
+.hs-attachments legend.hs-field-desc {
+  margin-top: 32px;
+  display: flex !important;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 0;
+  color: var(--placeholder-color);
+  padding-left: 64px;
+  min-height: 48px;
+}
+.hs-attachments legend.hs-field-desc::before {
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  content: "+";
+  font-size: 24px;
+  margin-right: 16px;
+  color: var(--plus-color);
+  background: var(--plus-background);
+}
+.legal-consent-container span {
+  font-size: 12px;
+  color: var(--input-color);
+}
+.legal-consent-container .hs-richtext p,
+.hs-richtext p a,
+.hs-richtext p a:hover,
+.hs-richtext p a:visited {
+  font-size: 12px;
+  color: var(--input-color) !important;
+}
+[class^=form-columns-]:nth-child(3),
+[class^=form-columns-]:nth-child(6) {
+  border-bottom: 1px;
+  border-color: rgba(255, 255, 255, .25);
+  border-style: solid;
+  margin-bottom: 40px;
+  padding-bottom: 12px;
+}
+.hs-error-msg {
+  margin-top: 8px;
+}
+.hs-form-booleancheckbox input {
+  margin: 0 !important;
+}
+.hs-form-booleancheckbox span {
+  line-height: 1;
+}
+.hs-form-required {
+  display: none;
+} 
