@@ -7,15 +7,15 @@
   font-display: swap;
 }
 :root {
-  --input-background: #303030;
-  --label-color: #FFFFFF;
+  --input-background: #E2E2E2;
+  --label-color: #000000;
   --placeholder-color: #777777;
-  --input-color: #FFF;
+  --input-color: #000000;
   --checkbox-border: #303030;
   --checkbox-border-checked: #FFF;
   --checkbox-checked-label-color: #000000;
-  --plus-background: #fff;
-  --plus-color: #000;
+  --plus-background: #000000;
+  --plus-color: #fff;
   --font-family: "Acidgrotesk";
 }
 * {
@@ -103,7 +103,7 @@ ul[role='checkbox'] input:checked~span {
   color: var(--checkbox-checked-label-color);
 }
 
-span > span.gray-text {
+span.gray-text {
   color: #777777 !important;
 }
 div form .actions input[type='submit'].primary.hs-button,
@@ -166,14 +166,13 @@ div form .actions input[type='submit'].primary.hs-button:focus {
   font-size: 12px;
   color: var(--input-color);
 }
-.legal-consent-container .hs-richtext p,
+.hs-richtext p,
 .hs-richtext p a,
 .hs-richtext p a:hover,
 .hs-richtext p a:visited {
   font-size: 12px;
   color: var(--input-color) !important;
 }
-[class^=form-columns-]:nth-child(3),
 [class^=form-columns-]:nth-child(6) {
   border-bottom: 1px;
   border-color: rgba(255, 255, 255, .25);
