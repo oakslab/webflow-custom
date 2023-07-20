@@ -103,8 +103,14 @@ ul[role='checkbox'] input:checked~span {
   color: var(--checkbox-checked-label-color);
 }
 
-span.gray-text {
+span.gray-text,
+span > span.gray-text {
   color: #777777 !important;
+}
+
+.actions  {
+  margin-top: 0px;
+  margin-bottom: 0p;
 }
 div form .actions input[type='submit'].primary.hs-button,
 div form .actions input[type='submit'].primary.hs-button:hover,
@@ -163,22 +169,26 @@ div form .actions input[type='submit'].primary.hs-button:focus {
   background: var(--plus-background);
 }
 .legal-consent-container span {
-  font-size: 12px;
   color: var(--input-color);
 }
-.hs-richtext p,
+.hs-richtext p {
+  color: var(--label-color)
+}
 .hs-richtext p a,
 .hs-richtext p a:hover,
 .hs-richtext p a:visited {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #777777 !important;
+}
+.legal-consent p, .legal-consent a{
+  margin-top: 8px;
   font-size: 12px;
-  color: var(--input-color) !important;
 }
 [class^=form-columns-]:nth-child(6) {
   border-bottom: 1px;
   border-color: rgba(255, 255, 255, .25);
   border-style: solid;
-  margin-bottom: 40px;
-  padding-bottom: 12px;
 }
 .hs-error-msg {
   margin-top: 8px;
