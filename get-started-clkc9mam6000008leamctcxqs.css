@@ -201,4 +201,11 @@ div form .actions input[type='submit'].primary.hs-button:focus {
 }
 .hs-form-required {
   display: none;
-} 
+}
+.input textarea{
+  min-height: unset !important;
+  max-height: unset !important;
+}
+.inputs-list:first-child {
+  padding-top: 0;
+}
